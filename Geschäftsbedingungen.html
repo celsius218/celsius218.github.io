@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Allgemeine Geschäftsbedingungen </title>
+    <style>
+        footer {
+          background-color: white;
+          text-align: center;
+          padding-bottom: 15px;
+        }
+        ul {
+          padding-left: 25px;
+        }
+        main {
+           flex: 1;
+           padding: 20px;
+       }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        nav {
+            background: #333;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .logo {
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .menu-toggle {
+            display: none;
+            color: white;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            transition: all 0.3s ease;
+        }
+
+        .nav-links li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            display: block;
+        }
+
+        .nav-links li a:hover {
+            background: #555;
+            border-radius: 4px;
+        }
+
+        @media (max-width: 768px) {
+            .menu-toggle {
+                display: block;
+            }
+
+            .nav-links {
+                width: 100%;
+                flex-direction: column;
+                display: none;
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .nav-links li {
+                margin: 5px 0;
+            }
+        }
+          .section1 {
+            text-align: center;
+          }
+              .fixed {
+                  position: fixed;
+                  top: 0;
+                  left: 0;
+                  width: 100%;
+                  z-index: 99;
+              }
+              body {
+                  padding-left: 10%;
+                  padding-right: 10%;
+              }
+
+              @media screen and (max-width: 800px) {
+                  body {
+                      padding: 10px;
+                  }
+              }
+              body {
+                  background: #f9f0f5;
+              }
+              .hello {
+                  padding: 15px;
+
+              }
+              /* Add this to your existing style section */
+
+        p {
+          font-size: 16px;
+        }
+        .form-control {
+          background-color: white !important;
+          color: #000000 !important;
+        }
+
+        /* Specifically target the textarea if needed */
+        .fancytext {
+            background-color: white !important;
+            color: #000000 !important;
+        }
+
+        /* Additional styles for the terms page */
+        .terms-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .terms-header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #e0e0e0;
+        }
+
+        .terms-header h1 {
+            color: #333;
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+
+        .last-updated {
+            color: #666;
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+
+        .terms-section {
+            background-color: white;
+            border-radius: 8px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .terms-section h2 {
+            color: #444;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #f0f0f0;
+            padding-bottom: 10px;
+        }
+
+        .terms-section h3 {
+            color: #555;
+            margin: 25px 0 15px 0;
+        }
+
+        .terms-section p {
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+
+        .terms-section ul {
+            margin-bottom: 20px;
+        }
+
+        .terms-section li {
+            margin-bottom: 10px;
+            line-height: 1.6;
+        }
+
+        .highlight-box {
+            background-color: #f8f9fa;
+            border-left: 4px solid #007bff;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+
+        .contact-legal {
+            background-color: #e9f7fe;
+            border-radius: 8px;
+            padding: 25px;
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        @media (max-width: 600px) {
+            .terms-header h1 {
+                font-size: 2rem;
+            }
+
+            .terms-section {
+                padding: 20px;
+            }
+
+            body {
+                padding-left: 5%;
+                padding-right: 5%;
+            }
+        }
+    </style>
+</head>
+<body>
+  <nav>
+      <div class="logo">schriftarten.top</div>
+      <div class="menu-toggle">☰</div>
+      <ul class="nav-links">
+          <li><a href="/">Startseite</a></li>
+      </ul>
+  </nav>
+
+    <div class="terms-container">
+        <div class="terms-header">
+            <h1>Allgemeine Geschäftsbedingungen</h1>
+        </div>
+
+        <div class="terms-section">
+            <h2>1. Geltungsbereich</h2>
+            <p>Diese Allgemeinen Geschäftsbedingungen (AGB) gelten für die Nutzung des Schriftgenerators unter schriftarten.top sowie aller damit verbundenen Dienste und Angebote.</p>
+            <p>Durch die Nutzung unserer Dienste erklären Sie sich mit diesen Bedingungen einverstanden. Sollten Sie mit diesen Bedingungen nicht einverstanden sein, nutzen Sie unsere Dienste bitte nicht.</p>
+        </div>
+
+        <div class="terms-section">
+            <h2>2. Dienstleistung</h2>
+            <p>schriftarten.top bietet einen kostenlosen Online-Schriftgenerator an, der es Nutzern ermöglicht, Texte in verschiedene Schriftstile umzuwandeln.</p>
+
+            <h3>2.1 Funktionsumfang</h3>
+            <ul>
+                <li>Kostenlose Umwandlung von Texten in verschiedene Schriftarten</li>
+                <li>Kopieren der generierten Texte in die Zwischenablage</li>
+                <li>Nutzung auf verschiedenen Geräten und Browsern</li>
+                <li>Keine Registrierung erforderlich</li>
+            </ul>
+
+            <h3>2.2 Verfügbarkeit</h3>
+            <p>Wir bemühen uns, eine hohe Verfügbarkeit unserer Dienste zu gewährleisten, können jedoch keine durchgängige Erreichbarkeit garantieren. Wartungsarbeiten können die Verfügbarkeit zeitweise einschränken.</p>
+        </div>
+
+        <div class="terms-section">
+            <h2>3. Nutzungsbedingungen</h2>
+
+            <h3>3.1 Erlaubte Nutzung</h3>
+            <p>Sie dürfen unsere Dienste nutzen für:</p>
+            <ul>
+                <li>Persönliche, nicht-kommerzielle Zwecke</li>
+                <li>Erstellung von Inhalten für soziale Medien</li>
+                <li>Gestaltung von Profilen auf verschiedenen Plattformen</li>
+                <li>Kreative Projekte und persönliche Kommunikation</li>
+            </ul>
+
+            <h3>3.2 Verbotene Nutzung</h3>
+            <p>Es ist untersagt, unsere Dienste zu nutzen für:</p>
+            <ul>
+                <li>Illegale Aktivitäten oder zur Förderung illegaler Handlungen</li>
+                <li>Verbreitung von Hassreden, Drohungen oder Belästigungen</li>
+                <li>Erstellung von betrügerischen oder irreführenden Inhalten</li>
+                <li>Massenerstellung von Spam oder unerwünschten Nachrichten</li>
+                <li>Angriffe auf unsere technische Infrastruktur</li>
+                <li>Kommerzielle Nutzung ohne vorherige Genehmigung</li>
+            </ul>
+
+            <div class="highlight-box">
+                <p><strong>Wichtig:</strong> Wir behalten uns das Recht vor, die Nutzung unserer Dienste jederzeit zu untersagen, wenn gegen diese Nutzungsbedingungen verstoßen wird.</p>
+            </div>
+        </div>
+
+        <div class="terms-section">
+            <h2>4. Urheberrecht und geistiges Eigentum</h2>
+            <p>Die auf schriftarten.top generierten Texte unterliegen folgenden Bestimmungen:</p>
+
+            <h3>4.1 Nutzungsrechte</h3>
+            <p>Sie behalten alle Rechte an den von Ihnen eingegebenen Originaltexten. Durch die Generierung von Schriftarten übertragen Sie keine Rechte an uns.</p>
+
+            <h3>4.2 Unsere Rechte</h3>
+            <p>Die auf unserer Website implementierten Algorithmen, das Design, die Logik und die technische Umsetzung des Schriftgenerators sind unser geistiges Eigentum und durch Urheberrecht geschützt.</p>
+
+            <h3>4.3 Drittanbieter-Rechte</h3>
+            <p>Einige der von uns verwendeten Schriftzeichen stammen aus dem Unicode-Standard und unterliegen den entsprechenden Lizenzbedingungen.</p>
+        </div>
+
+        <div class="terms-section">
+            <h2>5. Haftungsausschluss</h2>
+
+            <h3>5.1 Verfügbarkeit und Funktionalität</h3>
+            <p>Wir übernehmen keine Haftung für:</p>
+            <ul>
+                <li>Vorübergehende Nichtverfügbarkeit unserer Dienste</li>
+                <li>Technische Probleme oder Wartungsarbeiten</li>
+                <li>Inkompatibilität mit bestimmten Browsern oder Geräten</li>
+                <li>Datenverlust während der Nutzung</li>
+            </ul>
+
+            <h3>5.2 Generierte Inhalte</h3>
+            <p>Wir haften nicht für:</p>
+            <ul>
+                <li>Die Verwendung der generierten Texte durch Dritte</li>
+                <li>Rechtliche Konsequenzen aus der Verwendung generierter Texte</li>
+                <li>Fehlfunktionen bei der Darstellung auf bestimmten Plattformen</li>
+                <li>Urheberrechtsverletzungen durch Nutzer</li>
+            </ul>
+
+            <h3>5.3 Externe Links</h3>
+            <p>Unsere Website kann Links zu externen Websites enthalten. Wir übernehmen keine Verantwortung für den Inhalt dieser Websites.</p>
+        </div>
+
+        <div class="terms-section">
+            <h2>6. Datenschutz</h2>
+            <p>Ihre Privatsphäre ist uns wichtig. Wir sammeln und verarbeiten personenbezogene Daten gemäß unserer Datenschutzerklärung.</p>
+            <p>Beachten Sie, dass unsere Dienste Cookies und ähnliche Technologien verwenden können, um die Funktionalität zu gewährleisten.</p>
+        </div>
+
+        <div class="terms-section">
+            <h2>7. Änderungen der AGB</h2>
+            <p>Wir behalten uns das Recht vor, diese Allgemeinen Geschäftsbedingungen jederzeit zu ändern. Über wesentliche Änderungen werden wir Sie durch einen Hinweis auf unserer Website informieren.</p>
+            <p>Die fortgesetzte Nutzung unserer Dienste nach Veröffentlichung von Änderungen gilt als Zustimmung zu den aktualisierten Bedingungen.</p>
+        </div>
+
+        <div class="terms-section">
+            <h2>8. Schlussbestimmungen</h2>
+
+            <h3>8.1 Anwendbares Recht</h3>
+            <p>Diese Bedingungen unterliegen deutschem Recht unter Ausschluss des UN-Kaufrechts.</p>
+
+            <h3>8.2 Gerichtsstand</h3>
+            <p>Gerichtsstand für alle Streitigkeiten aus oder im Zusammenhang mit diesen AGB ist, sofern gesetzlich zulässig, unser Geschäftssitz.</p>
+
+            <h3>8.3 Salvatorische Klausel</h3>
+            <p>Sollte eine Bestimmung dieser AGB unwirksam sein oder werden, bleibt die Wirksamkeit der übrigen Bestimmungen unberührt.</p>
+        </div>
+
+        <div class="contact-legal">
+            <h3>Fragen zu unseren AGB?</h3>
+            <p>Wenn Sie Fragen zu diesen Allgemeinen Geschäftsbedingungen haben, kontaktieren Sie uns bitte unter:</p>
+            <p>Google Mail: <strong>shyamkumar03rt2@gmail.com</strong></p>
+        </div>
+    </div>
+
+    <footer>
+        <h3>Schnelllinks</h3>
+        <a href="/">Startseite</a><br>
+        <a href="Über-uns.html">Über uns</a><br>
+        <a href="Geschäftsbedingungen.html">Allgemeine Geschäftsbedingungen</a><br>
+        <a href="Datenschutzrichtlinie.html">Datenschutzrichtlinie</a><br>
+        <p>&copy; 2025 schriftarten.top - Alle Rechte vorbehalten</p>
+    </footer>
+
+    <script>
+        // Mobile Navigation Toggle
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

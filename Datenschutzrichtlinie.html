@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datenschutzerklärung</title>
+    <style>
+        footer {
+          background-color: white;
+          text-align: center;
+          padding-bottom: 15px;
+        }
+        ul {
+          padding-left: 25px;
+        }
+        main {
+           flex: 1;
+           padding: 20px;
+       }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        nav {
+            background: #333;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .logo {
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .menu-toggle {
+            display: none;
+            color: white;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            transition: all 0.3s ease;
+        }
+
+        .nav-links li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            display: block;
+        }
+
+        .nav-links li a:hover {
+            background: #555;
+            border-radius: 4px;
+        }
+
+        @media (max-width: 768px) {
+            .menu-toggle {
+                display: block;
+            }
+
+            .nav-links {
+                width: 100%;
+                flex-direction: column;
+                display: none;
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .nav-links li {
+                margin: 5px 0;
+            }
+        }
+          .section1 {
+            text-align: center;
+          }
+              .fixed {
+                  position: fixed;
+                  top: 0;
+                  left: 0;
+                  width: 100%;
+                  z-index: 99;
+              }
+              body {
+                  padding-left: 10%;
+                  padding-right: 10%;
+              }
+
+              @media screen and (max-width: 800px) {
+                  body {
+                      padding: 10px;
+                  }
+              }
+              body {
+                  background: #f9f0f5;
+              }
+              .hello {
+                  padding: 15px;
+
+              }
+              /* Add this to your existing style section */
+
+        p {
+          font-size: 16px;
+        }
+        .form-control {
+          background-color: white !important;
+          color: #000000 !important;
+        }
+
+        /* Specifically target the textarea if needed */
+        .fancytext {
+            background-color: white !important;
+            color: #000000 !important;
+        }
+
+        /* Additional styles for the privacy page */
+        .privacy-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .privacy-header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #e0e0e0;
+        }
+
+        .privacy-header h1 {
+            color: #333;
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+
+        .last-updated {
+            color: #666;
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+
+        .privacy-section {
+            background-color: white;
+            border-radius: 8px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .privacy-section h2 {
+            color: #444;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #f0f0f0;
+            padding-bottom: 10px;
+        }
+
+        .privacy-section h3 {
+            color: #555;
+            margin: 25px 0 15px 0;
+        }
+
+        .privacy-section h4 {
+            color: #666;
+            margin: 20px 0 10px 0;
+        }
+
+        .privacy-section p {
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+
+        .privacy-section ul {
+            margin-bottom: 20px;
+        }
+
+        .privacy-section li {
+            margin-bottom: 10px;
+            line-height: 1.6;
+        }
+
+        .highlight-box {
+            background-color: #f8f9fa;
+            border-left: 4px solid #007bff;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+
+        .warning-box {
+            background-color: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        .data-table th, .data-table td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+
+        .data-table th {
+            background-color: #f8f9fa;
+            font-weight: bold;
+        }
+
+        .data-table tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        .contact-privacy {
+            background-color: #e9f7fe;
+            border-radius: 8px;
+            padding: 25px;
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .data-processing-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .data-item {
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            border-left: 4px solid #007bff;
+        }
+
+        @media (max-width: 600px) {
+            .privacy-header h1 {
+                font-size: 2rem;
+            }
+
+            .privacy-section {
+                padding: 20px;
+            }
+
+            body {
+                padding-left: 5%;
+                padding-right: 5%;
+            }
+
+            .data-table {
+                font-size: 14px;
+            }
+
+            .data-table th, .data-table td {
+                padding: 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+  <nav>
+      <div class="logo">schriftarten.top</div>
+      <div class="menu-toggle">☰</div>
+      <ul class="nav-links">
+          <li><a href="/">Startseite</a></li>
+      </ul>
+  </nav>
+
+    <div class="privacy-container">
+        <div class="privacy-header">
+            <h1>Datenschutzerklärung</h1>
+        </div>
+
+        <div class="privacy-section">
+            <h2>1. Verantwortliche Stelle</h2>
+            <p>Verantwortlich für die Datenverarbeitung auf dieser Website ist:</p>
+            <p><strong>schriftarten.top</strong><br>
+            E-Mail: datenschutz@schriftarten.top</p>
+        </div>
+
+        <div class="privacy-section">
+            <h2>2. Allgemeines zur Datenverarbeitung</h2>
+            <p>Der Schutz Ihrer persönlichen Daten ist uns ein wichtiges Anliegen. Wir verarbeiten personenbezogene Daten stets im Einklang mit der Datenschutz-Grundverordnung (DSGVO) und dem Bundesdatenschutzgesetz (BDSG).</p>
+
+            <div class="highlight-box">
+                <p><strong>Wichtig:</strong> Unser Schriftgenerator wurde so konzipiert, dass er so wenig personenbezogene Daten wie möglich verarbeitet. Die von Ihnen eingegebenen Texte werden in der Regel nicht auf unseren Servern gespeichert.</p>
+            </div>
+        </div>
+
+        <div class="privacy-section">
+            <h2>3. Erhobene Daten und Verwendungszwecke</h2>
+
+            <h3>3.1 Technisch notwendige Daten</h3>
+            <p>Bei jedem Aufruf unserer Website erhebt unser System automatisiert Daten und Informationen vom Computersystem des aufrufenden Geräts:</p>
+
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Datenkategorie</th>
+                        <th>Verwendungszweck</th>
+                        <th>Rechtsgrundlage</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>IP-Adresse</td>
+                        <td>Darstellung der Website, Abwehr von Angriffen</td>
+                        <td>Art. 6 Abs. 1 lit. f DSGVO</td>
+                    </tr>
+                    <tr>
+                        <td>Browsertyp und -version</td>
+                        <td>Optimale Darstellung der Website</td>
+                        <td>Art. 6 Abs. 1 lit. f DSGVO</td>
+                    </tr>
+                    <tr>
+                        <td>Betriebssystem</td>
+                        <td>Technische Kompatibilität</td>
+                        <td>Art. 6 Abs. 1 lit. f DSGVO</td>
+                    </tr>
+                    <tr>
+                        <td>Zugriffszeitpunkt</td>
+                        <td>Systemstabilität, Missbrauchsverhinderung</td>
+                        <td>Art. 6 Abs. 1 lit. f DSGVO</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>3.2 Von Ihnen eingegebene Texte</h3>
+            <p>Die Texte, die Sie in unseren Schriftgenerator eingeben, werden:</p>
+            <ul>
+                <li><strong>Lokal in Ihrem Browser</strong> verarbeitet</li>
+                <li><strong>Nicht</strong> an unsere Server übertragen</li>
+                <li><strong>Nicht</strong> dauerhaft gespeichert</li>
+                <li><strong>Nicht</strong> mit anderen Nutzern geteilt</li>
+            </ul>
+
+            <div class="warning-box">
+                <p><strong>Hinweis:</strong> Obwohl wir keine Texte speichern, empfehlen wir, keine sensiblen oder persönlichen Informationen in den Generator einzugeben.</p>
+            </div>
+        </div>
+
+        <div class="privacy-section">
+            <h2>4. Cookies und Tracking</h2>
+
+            <h3>4.1 Technisch notwendige Cookies</h3>
+            <p>Wir setzen Session-Cookies ein, die für den Betrieb der Website notwendig sind:</p>
+            <ul>
+                <li><strong>Funktionsumfang:</strong> Gewährleistung der grundlegenden Website-Funktionen</li>
+                <li><strong>Speicherdauer:</strong> Bis zum Schließen des Browsers</li>
+                <li><strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. f DSGVO</li>
+            </ul>
+
+            <h3>4.2 Analyse-Tools</h3>
+            <p>Wir verwenden derzeit keine Analyse-Tools wie Google Analytics. Sollte sich dies ändern, werden wir diese Datenschutzerklärung entsprechend aktualisieren und Sie informieren.</p>
+
+            <h3>4.3 Externe Inhalte</h3>
+            <p>Wir binden keine externen Inhalte von Drittanbietern ein, die Tracking-Cookies setzen könnten.</p>
+        </div>
+
+        <div class="privacy-section">
+            <h2>5. Datenweitergabe an Dritte</h2>
+            <p>Grundsätzlich geben wir Ihre personenbezogenen Daten nicht an Dritte weiter. Ausnahmen gelten nur in folgenden Fällen:</p>
+
+            <div class="data-processing-list">
+                <div class="data-item">
+                    <h4>Hosting-Partner</h4>
+                    <p>Unser Hosting-Dienstleister verarbeitet technisch notwendige Daten im Rahmen einer Auftragsverarbeitung.</p>
+                </div>
+                <div class="data-item">
+                    <h4>Gesetzliche Verpflichtungen</h4>
+                    <p>Bei rechtlichen Anforderungen durch staatliche Stellen geben wir Daten nur im gesetzlich vorgeschriebenen Rahmen weiter.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="privacy-section">
+            <h2>6. Ihre Rechte</h2>
+            <p>Sie haben folgende Rechte bezüglich Ihrer personenbezogenen Daten:</p>
+
+            <h3>6.1 Auskunftsrecht (Art. 15 DSGVO)</h3>
+            <p>Sie haben das Recht, eine Bestätigung darüber zu verlangen, ob wir personenbezogene Daten von Ihnen verarbeiten.</p>
+
+            <h3>6.2 Recht auf Berichtigung (Art. 16 DSGVO)</h3>
+            <p>Sie haben das Recht, unrichtige personenbezogene Daten berichtigen zu lassen.</p>
+
+            <h3>6.3 Recht auf Löschung (Art. 17 DSGVO)</h3>
+            <p>Sie haben das Recht, die Löschung Ihrer personenbezogenen Daten zu verlangen.</p>
+
+            <h3>6.4 Recht auf Einschränkung (Art. 18 DSGVO)</h3>
+            <p>Sie haben das Recht, die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen.</p>
+
+            <h3>6.5 Widerspruchsrecht (Art. 21 DSGVO)</h3>
+            <p>Sie haben das Recht, der Verarbeitung Ihrer personenbezogenen Daten zu widersprechen.</p>
+
+            <h3>6.6 Beschwerderecht (Art. 77 DSGVO)</h3>
+            <p>Sie haben das Recht, sich bei einer Aufsichtsbehörde zu beschweren.</p>
+        </div>
+
+        <div class="privacy-section">
+            <h2>7. Datensicherheit</h2>
+            <p>Wir treffen angemessene technische und organisatorische Maßnahmen, um Ihre Daten vor Verlust, Manipulation und unberechtigtem Zugriff zu schützen:</p>
+            <ul>
+                <li>Verschlüsselte Datenübertragung (SSL/TLS)</li>
+                <li>Regelmäßige Sicherheitsupdates</li>
+                <li>Zugriffsbeschränkungen auf personenbezogene Daten</li>
+                <li>Datenschutzfreundliche Voreinstellungen</li>
+            </ul>
+        </div>
+
+        <div class="privacy-section">
+            <h2>8. Speicherdauer</h2>
+            <p>Personenbezogene Daten werden nur so lange gespeichert, wie es für den jeweiligen Verwendungszweck erforderlich ist:</p>
+            <ul>
+                <li><strong>Server-Logfiles:</strong> 7 Tage</li>
+                <li><strong>Kontaktdaten bei Anfragen:</strong> Bis zur abschließenden Bearbeitung</li>
+                <li><strong>Technische Cookies:</strong> Bis zum Schließen des Browsers</li>
+            </ul>
+        </div>
+
+        <div class="privacy-section">
+            <h2>9. Änderungen dieser Datenschutzerklärung</h2>
+            <p>Wir behalten uns vor, diese Datenschutzerklärung anzupassen, um sie an geänderte rechtliche Anforderungen oder Änderungen unseres Dienstes anzupassen.</p>
+            <p>Die jeweils aktuelle Version ist immer auf unserer Website abrufbar.</p>
+        </div>
+
+        <div class="contact-privacy">
+            <h3>Fragen zum Datenschutz?</h3>
+            <p>Wenn Sie Fragen zur Verarbeitung Ihrer personenbezogenen Daten haben, kontaktieren Sie uns bitte unter:</p>
+            <p>Google Mail: <strong>shyamkumar03rt2@gmail.com</strong></p>
+            <p>Wir werden uns innerhalb der gesetzlichen Fristen bei Ihnen melden.</p>
+        </div>
+    </div>
+
+    <footer>
+        <h3>Schnelllinks</h3>
+        <a href="/">Startseite</a><br>
+        <a href="Über-uns.html">Über uns</a><br>
+        <a href="Geschäftsbedingungen.html">Allgemeine Geschäftsbedingungen</a><br>
+        <a href="Datenschutzrichtlinie.html">Datenschutzrichtlinie</a><br>
+        <p>&copy; 2025 schriftarten.top - Alle Rechte vorbehalten</p>
+    </footer>
+
+    <script>
+        // Mobile Navigation Toggle
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
